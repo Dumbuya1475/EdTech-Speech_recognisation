@@ -1,7 +1,7 @@
 """
 """
+import speech_recognition
 import random
-
 from ENGINE import say
 from my_asistant_list import HEAD_MEDICATION_RESPONSE
 
@@ -15,11 +15,9 @@ def medical_response():
     user_input = input(">>> ")
 
     if "head" in user_input or "sleeping" in user_input:
-        # print(random.choice(HEAD_MEDICATION_RESPONSE))
         say(random.choice(HEAD_MEDICATION_RESPONSE))
 
     elif "sleepless" in user_input or "dizzy" in user_input:
-        # print(random.choice(HEAD_MEDICATION_RESPONSE))
         say(random.choice(HEAD_MEDICATION_RESPONSE))
 
     else:
@@ -80,17 +78,24 @@ def funny():
     ]
     say(random.choice(fun))
 
-# def local_language():
-#     """
-#     Responding in local language (krio)
-#     """
-#     local_language = [
-#         "Okey lae we talk krio",
-#         "wow. me are nor sabie talk am fine o",
-#         "oo u sabie talk am",
-#         "local language wow",
-#         "kreo kreo kreo. aa",
-#         "hmmmmmm",
-#         # "Alhassan ask me math question"
-#     ]
-#     say(random.choice(local_language))
+def local_language():
+    """
+    Responding in local language (krio)
+    """
+    local = [
+        "Okey lae we tock am",
+        "me are nor sabie tock am fine o",
+        "hmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm",
+    ]
+    say(random.choice(local))
+
+def wake_up():
+    response = random.choice(
+        [
+            "Hello, how can I help you today?",
+            "I'm here to assist you with any questions.",
+            "Ask me anything, and I'll do my best to provide an answer.",
+            "How can I be of service to you?",
+        ]
+    )
+    say(response)
