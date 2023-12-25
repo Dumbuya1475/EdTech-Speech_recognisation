@@ -3,7 +3,7 @@ w
 """
 import random
 from ENGINE import say
-from my_asistant_list import CHANGE_NAME_RESPONSES, ILLEGAL
+from lists import CHANGE_NAME_RESPONSES, ILLEGAL
 
 
 NEW_NAME_INPUT = ""  # Initialize the variable at the module level

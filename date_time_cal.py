@@ -1,8 +1,5 @@
-"""
-as
-"""
+"""Date and time libery"""
 from datetime import datetime
-# import re
 
 CURRENT_DATETIME = datetime.now() # Get the current date and time
 
@@ -42,5 +39,5 @@ def calculate(expression):
     try:
         result = eval(expression)
         return f"{result}"
-    except Exception  as e:
+    except Exception as e:
         return f"Error: {str(e)}"

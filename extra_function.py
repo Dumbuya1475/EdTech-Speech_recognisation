@@ -1,13 +1,11 @@
-"""
-"""
-import speech_recognition
+"""The ranodm libary"""
 import random
 from ENGINE import say
-from my_asistant_list import HEAD_MEDICATION_RESPONSE
+from lists import HEAD_MEDICATION_RESPONSE
 
 def medical_response():
     """
-    _summary_
+    AI respond to medication problem
     """
     print("Describe how you feeling now and i will help you out")
     say("Describe how you are feeling now so can help you out")
@@ -39,16 +37,9 @@ def joke_response():
         "U mut day smell",
         "cus nor fine",
         "ok o",
-        # "spell for me. Psycology",
-        # "spell for me. love,",
-        # "spell for me. KAdiatu",
-        # "spell for me. cow",
-        # "spell for me. man",
-        # "spell for me. y",
         "spell for me. house",
         "hawanatu U mut day smell",
-        # "You na piss are badie",
-        "Na who fat so",
+        "Na udat fat soo",
         "Are wan eat",
         "unar go sleep",
         "go wass u mut",
@@ -90,6 +81,7 @@ def local_language():
     say(random.choice(local))
 
 def wake_up():
+    """Respond when AI wake up"""
     response = random.choice(
         [
             "Hello, how can I help you today?",

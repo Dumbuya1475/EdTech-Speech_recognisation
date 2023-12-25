@@ -4,13 +4,13 @@ Importing function from my function file
 import calendar
 import re
 from ENGINE import say
-from my_asistant_date_time_cal import calculate, date_response, time_response, weather_response
-from my_asistant_extra_function import funny, joke_response, local_language
-from my_asistant_extra_function import medical_response, president_response, wake_up
-from my_asistant_list import CHANGE_NAME_INPUT
-from my_asistant_list import MEDICATION_RECEIVE, NAME_RECEIVE
-from my_asistant_teach_function import listen_and_recognize, teach_me
-from my_asistant_update import ai_update, change_name, name_respond_output, user_credential
+from date_time_cal import calculate, date_response, time_response, weather_response
+from extra_function import funny, joke_response, local_language
+from extra_function import medical_response, president_response, wake_up
+from lists import CHANGE_NAME_INPUT
+from lists import MEDICATION_RECEIVE, NAME_RECEIVE
+from teach_function import listen_and_recognize, teach_me
+from updates import ai_update, change_name, name_respond_output, user_credential
 
 
 def handle_teach_me():
@@ -19,7 +19,6 @@ def handle_teach_me():
     """
     say("Sure, let's get started.")
     teach_me()
-
 
 def handle_user_input(user_input):
     """
@@ -64,6 +63,7 @@ def main():
     """
     Inicialize all the functions
     """
+    print("Hello! I am your assistant.")
     say("Hello! I am your assistant.")
 
     while True:

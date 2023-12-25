@@ -1,12 +1,9 @@
-
-"""
-l
-"""
+"""Initalizing glonbal variable"""
 NEW_NAME_INPUT = ""  # Initialize the variable at the module level
 FIRST_NAME = "" # Initialize the variable at the module level
 LAST_NAME = "" # Initialize the variable at the module level
 
-# Change AI name command enter
+# command: Change AI name
 CHANGE_NAME_INPUT = [
     "cha",
     "can i change your name",
@@ -14,7 +11,7 @@ CHANGE_NAME_INPUT = [
     "i would like to change your name",
 ]
 
-# AI respond to change name
+# respond: AI respond to change name
 CHANGE_NAME_RESPONSES = [
     "Sure. Enter my new name",
     "Okey. What's my new name",
@@ -41,19 +38,16 @@ GREETING_RECEIVE = [
     "hey",
     "hey there",
     "hello there",
-    "are wan eat",
     "can i ask you a question",
-    "how are you",
-    "hey super",
 ]
 
-# command:
+# command: Deprecating AI value
 BAD_COMMAND = [
     "i hate you",
     "fuck you",
 ]
 
-# command: Illegal words
+# command: Illegal input
 ILLEGAL = [
     "sex",
     "fuck",
@@ -74,6 +68,7 @@ USER_NAME_COMAND_RESPONSE = [
     "yoy are " + FIRST_NAME,
 ]
 
+# command: Seeking medication
 MEDICATION_RECEIVE = [
     "i am sick",
     "i'm not feeling good",
@@ -81,6 +76,7 @@ MEDICATION_RECEIVE = [
     "i'm not feeling bright",
 ]
 
+# respond: to illness (head)
 HEAD_MEDICATION_RESPONSE =  [
     "you need to take some rest that will make you feel better",
     "drenk plenty of water and have some rest",

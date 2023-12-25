@@ -1,39 +1,10 @@
-"""
-Add this folder to the PYTHONPATH so Python can find the modules below.
-"""
-
+"""Add this folder to the PYTHONPATH so Python can find the modules below."""
 import os
 import time
-import speech_recognition as sr
 from ENGINE import say
-# from my_asistant_main import main
-# from my_asistant_main import main
+from listen_and_recognize import listen_and_recognize
 
-def listen_and_recognize():
-    """
-    Function that Recognizes the speech with the speech recognition package and
-    returns it.
-    """
-
-    # recognizer = sr.Recognizer()
-
-    # with sr.Microphone() as source:
-    #     print("Say something:")
-    #     recognizer.adjust_for_ambient_noise(source)
-    #     audio = recognizer.listen(source)
-
-    try:
-        # user_input = recognizer.recognize_google(audio).lower()
-        user_input = input("$ ").lower()
-        print("You said:", user_input)
-        return user_input
-    except sr.UnknownValueError:
-        print("Sorry, could not understand audio.")
-        say("Sorry, could not understand audio.")
-        return None
-    except sr.RequestError as e:
-        print(f"Error with the speech recognition service: {e}")
-        return None
+listen_and_recognize()
 
 def read_day():
     """
@@ -73,6 +44,7 @@ def read_day():
 
 
 def read_months():
+    """handle user input to read month"""
     months = [
         ("Sunday", "S u n d a y"),
         # Add other months as needed
@@ -80,9 +52,9 @@ def read_months():
     print("Repeat after me:")
     say("Repeat after me:")
     say("The days of the week are:")
-    
+
     for month, spelled_month in months:
-        print(f"{month}")
+        print(f"{month}" + f"{spelled_month}")
         say(f"{month}")
 
         user_input = listen_and_recognize()
@@ -98,7 +70,7 @@ def read_months():
     say("Seven days make one week.")
 
     # Play short music using os.system
-    music_file_path = r'C:\Users\Suber\Downloads\AlanWalker.mp3'
+    music_file_path = r'C:\Users\Suber\Downloads\drop.mp3'
     os.system(f'start {music_file_path}')
 
     # Optional: Add a delay to let the music finish playing before the program exits
@@ -199,14 +171,12 @@ def learning():
         say(my_teaching)
 
 def teach_me():
-    """
-    Added this function as part of audacity of correctly varaible names and reading of user inputs
-    """
+    """Handle user input to teach"""
     learning()
     while True:
         user_input = listen_and_recognize()
         print(f"DEBUG: User input is '{user_input}'")
-        
+
         if "read the month of the year" in user_input or user_input == "1":
             read_months()
 
