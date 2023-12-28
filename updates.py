@@ -15,7 +15,6 @@ AI_NAME = [] # AI name stored (list)
 def change_name():
     """
     Change the AI's name based on user input.
-
     Parameters:
     - None.
     """
@@ -111,14 +110,12 @@ def user_credential():
     This function is responsible for handling user credentials.
 
     Returns:
-    (bool): True if the provided credentials are valid, False otherwise.
-
+    - (bool): True if the provided credentials are valid, False otherwise.
     """
     credentials = ["Current user " + FIRST_NAME + " " + LAST_NAME]
     for credental in credentials:
         print(credental)
-        return(credental)
-
+        # return(credental)
 
 def user_info():
     """

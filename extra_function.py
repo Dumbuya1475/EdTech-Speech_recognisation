@@ -34,22 +34,26 @@ def joke_response():
     Provide a random joke.
     """
     jokes = [
-        "U mut day smell",
-        "cus nor fine",
-        "ok o",
+        # "U mut day smell",
+        # "cus nor fine",
+        # "ok o",
         "spell for me. house",
-        "hawanatu U mut day smell",
-        "Na udat fat soo",
+        # "hawanatu U mut day smell",
+        # "Na udat fat soo",
         "Are wan eat",
         "unar go sleep",
-        "go wass u mut",
-        "Ibrahim. u kin spy",
-        "Exam dae nah d coner o",
-        "you back",
-        "banoo eye o",
+        # "go wass u mut",
+        # "Ibrahim. u kin spy",
+        # "Exam dae nah d coner o",
+        # "you back",
+        # "banoo eye o",
         "oo salone",
         "beans",
         "he shuck you",
+        "Dolly. spell house",
+        "Dolly. spell mango",
+        "Junior",
+        "Junior",
     ]
     return random.choice(jokes)
 

@@ -8,16 +8,16 @@ def listen_and_recognize():
     returns none
     """
 
-    # recognizer = sr.Recognizer()
+    recognizer = sr.Recognizer()
 
-    # with sr.Microphone() as source:
-    #     print("Say something:")
-    #     recognizer.adjust_for_ambient_noise(source)
-    #     audio = recognizer.listen(source)
+    with sr.Microphone() as source:
+        print("Say something:")
+        recognizer.adjust_for_ambient_noise(source)
+        audio = recognizer.listen(source)
 
     try:
-        # user_input = recognizer.recognize_google(audio).lower()
-        user_input = input("$ ").lower()
+        user_input = recognizer.recognize_google(audio).lower()
+        # user_input = input("$ ").lower()
         print("You said:", user_input)
         return user_input
     except sr.UnknownValueError:
