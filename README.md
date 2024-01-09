@@ -1,5 +1,5 @@
 """
-My Personal Assistant
+EdTech-Speech_recognisation
 
 This program is a simple personal assistant that interacts with the user through voice commands. It includes various functions such as providing the current time and date, calculating mathematical expressions, responding to weather queries, telling jokes, and more.
 
@@ -8,6 +8,8 @@ Functions:
 - handle_teach_me(): Interacts with the American wise say function to teach the user.
 - handle_user_input(user_input): Handles various user commands and responses.
 - get_random_joke(): Returns a random joke to be shared when the user's mood is negative.
+- engine(): Initalize the text to speech libary
+- listen_and_recognize(): This recognize user speech using the speech recognization package
 - main(): The main loop of the assistant, listening to user input, detecting mood, and responding accordingly.
 
 Imported Modules:
