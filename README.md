@@ -30,8 +30,9 @@ This program is a simple personal assistant that interacts with the user through
 2. **Teach days of the week**
 3. **Ask user for to take a quiz by calling the days or month and user should spell them correctly**
 4. **User friendly**
-5. **Tell dete and time**
+5. **Providing the current date and time**
 6. **Answer user question** **Eg. If user ask what is a noun**
+7. **Calculate mathematical expresion**
 
    ```bash
       git clone https://github.com/your-username/EdTech-Speech_recognisation.git
