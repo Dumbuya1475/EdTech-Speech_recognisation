@@ -1,4 +1,4 @@
-EdTech-Speech_recognisation
+# EdTech-Speech_recognisation
 
 This program is a simple personal assistant that interacts with the user through voice commands. It includes various functions such as providing the current time and date, calculating mathematical expressions, responding to weather queries, telling jokes, and more.
 
@@ -6,7 +6,7 @@ This program is a simple personal assistant that interacts with the user through
 
 - handle_teach_me(): Interacts with the American wise say function to teach the user.
 - handle_user_input(user_input): Handles various user commands and responses.
-- get_random_joke(): Returns a random joke to be shared when the user's mood is negative.
+- get_random_joke(): Returns a random joke to be shared when the users mood is negative.
 - engine(): Initalize the text to speech libary
 - listen_and_recognize(): This recognize user speech using the speech recognization package
 - main(): The main loop of the assistant, listening to user input, detecting mood, and responding accordingly.
@@ -22,7 +22,7 @@ This program is a simple personal assistant that interacts with the user through
 - lists: Custom module containing predefined lists of inputs and output.
 - teach_function: Custom module for educational information and voice recognition.
 - updates: Custom module for handling updates and user credentials.
-- detect_user_mood: Custom module for detecting the user's mood based on their input.
+- detect_user_mood: Custom module for detecting the users mood based on their input.
 
 ## Features
 
@@ -34,6 +34,44 @@ This program is a simple personal assistant that interacts with the user through
 6. **Answer user question** **Eg. If user ask what is a noun**
 7. **Calculate mathematical expresion**
 
-   ```bash
-      git clone https://github.com/your-username/EdTech-Speech_recognisation.git
-         cd EdTech-Speech_recognisation
+## Getting Started
+
+Follow the steps below to get the project up and running on your local machine.
+
+### Prerequisites
+
+Make sure you have Git and Python installed on your machine.
+
+### For the Libaries
+
+Make sure your have pyttsx3 and speech_Recognisation install
+
+To install run:
+
+```bash
+pip install pyttsx3
+pip install speech recognisation
+```
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-username/EdTech-Speech_recognisation.git
+```
+
+### Navigate to the Project Directory
+
+```bash
+cd EdTech-Speech_recognisation
+python main.py
+```
+
+### Run the main script
+
+```bash
+python main.py
+```
+
+## License
+
+This project is licensed under the MIT License.
